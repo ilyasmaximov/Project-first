@@ -15,16 +15,17 @@ html {
 }
 
 body {
-  background: url(../img/background.jpg);
+  background-size: cover;
   color: white;
   font-family: 'PoiretOne';
   font-size: 20px;
   line-height: 25px;
+  background-color: rgb(52, 50, 50);
 }
 
 /* Header start */
 .header {
-  width: 40%;
+  width: 20%;
   justify-content: space-between;
   flex-direction: column;
   float: left;
@@ -32,10 +33,15 @@ body {
   min-height: 100vh;
   position: fixed;
   padding: 60px 50px;
+  background: black;
 }
+
 .hello {
   position: relative;
   margin-bottom: 40px;
+  background-color:rgb(52, 50, 50);
+  border-radius: 20px;
+  padding: 10px;
 }
 .myname {
   padding: 10px;
@@ -50,8 +56,15 @@ body {
 .navigate {
   list-style-type: none;
   position: relative;
-  padding: 20px;
+  padding: 10px;
   text-transform: uppercase;
+  background-color:rgb(52, 50, 50);
+  border-radius: 20px;
+}
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+  opacity: .75;
 }
 .about_li {
   text-decoration: none;
@@ -70,11 +83,14 @@ body {
   color: white;
 }
 .social_media {
-  width: 100%;
+  width:max-content;
+  background-color: rgb(52, 50, 50);
+  border-radius: 20px;
+  padding: 10px;
 }
 .github_link {
   display: inline-block;
-  width: 15%;
+  width: 30px;
 }
 .github_img {
   width: 100%;
@@ -82,7 +98,7 @@ body {
 }
 .vk_link {
   display: inline-block;
-  width: 15%;
+  width: 30px;
 }
 .vk_img {
   width: 100%;
@@ -91,20 +107,113 @@ body {
 
 /* main start */
 main {
-  width: 60%;
+  width: 80%;
   float: right;
   padding: 60px 50px;
 }
 
 .about {
   padding: 10px 20px;
+  background-color: black;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.aboutme{
+  padding: 20px 10px;
+  background-color: rgb(52, 50, 50);
+  border-radius: 20px;
+  margin: 20px 0;
 }
 .experience {
   padding: 10px 20px;
+  background-color: black;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.myexperience {
+  padding: 20px 10px;
+  background-color: rgb(52, 50, 50);
+  border-radius: 20px;
+  margin: 20px 0;
 }
 .projects {
   padding: 10px 20px;
+  background-color:black;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+
+.project {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  padding: 20px 10px;
+  background-color: rgb(52, 50, 50);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.project:last-child{
+  margin-bottom: 20px;
+}
+.pageimg {
+  width: 100%;
+}
+
+.project_img {
+  grid-column: span 2;
+  padding-left: 10px;
+}
+.pageimg{
+  border-radius: 20px;
+}
+.project_text{
+  grid-column: span 6;
+  padding: 0 40px 0 20px;
+}
+.project_title {
+  text-decoration: none;
+  color: white;
+}
+.project_about {
+  padding-top: 10px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.project_tags{
+  padding: 20px;
+  grid-column: span 1;
+}
+.gitlink{
+  width: max-content;
+  height: max-content;
+  margin-bottom: 2px;
+}
+.gitimg {
+  filter: invert(100%);
+  width: 45px;
+  vertical-align: baseline;
+}
+.tag{
+  text-align: center;
+  background-color: rgb(77, 74, 74);
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  margin-top: 2px;
+  border-radius: 20px;
+  line-height: 15px;
+  font-size: 15px;
 }
 .contacts {
   padding: 10px 20px;
+  background-color: black;
+  border-radius: 20px;
+}
+.contact{
+  padding: 20px 10px;
+  background-color: rgb(52, 50, 50);
+  border-radius: 20px;
+  margin: 20px 0;
 }
