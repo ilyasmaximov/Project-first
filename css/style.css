@@ -23,7 +23,7 @@ body {
 }
 
 /* Header start */
-.header {
+header {
   width: 300px;
   justify-content: space-between;
   flex-direction: column;
@@ -109,7 +109,7 @@ body {
 
 /* main start */
 main {
-  width: calc(100% - 300px);
+  margin-left: 300px;
   float: right;
   padding: 60px 50px;
 }
@@ -236,7 +236,7 @@ main {
 }
 
 footer {
-  width: calc(100% - 300px);
+  margin-left: 300px;
   float: right;
   padding: 60px 50px;
   color: white;
