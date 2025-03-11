@@ -20,6 +20,8 @@ body {
   font-size: 20px;
   line-height: 25px;
   background-color: rgb(52, 50, 50);
+  display: flex;
+  height: 100vh;
 }
 
 /* Header start */
@@ -29,8 +31,7 @@ header {
   flex-direction: column;
   float: left;
   display: flex;
-  min-height: 100vh;
-  position: fixed;
+  min-height: 100%;
   padding: 60px 50px;
   background: black;
 }
@@ -109,7 +110,7 @@ header {
 
 /* main start */
 main {
-  margin-left: 300px;
+  overflow-y: auto;
   float: right;
   padding: 60px 50px;
 }
@@ -236,8 +237,5 @@ main {
 }
 
 footer {
-  margin-left: 300px;
-  float: right;
-  padding: 60px 50px;
-  color: white;
+  margin-top: 50px;
 }
